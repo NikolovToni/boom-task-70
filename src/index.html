@@ -17,7 +17,6 @@
     <div class="main">
       <div class="image">
         <img
-          id="image"
           src="https://cdn-icons-png.flaticon.com/256/4481/4481301.png"
           alt=""
           width="100"
@@ -30,8 +29,8 @@
   </body>
   <script>
     document.querySelector(".image").onclick = () => {
-      let myImg = document.getElementById("image");
-      myImg.setAttribute("style", "transform: scale(2);");
+      let image = document.querySelector(".image");
+      image.setAttribute("style", "transform: scale(2);");
     };
   </script>
 </html>
