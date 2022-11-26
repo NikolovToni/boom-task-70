@@ -31,12 +31,7 @@
   <script>
     document.querySelector(".image").onclick = () => {
       let myImg = document.getElementById("image");
-      let width = myImg.clientWidth;
-      let height = myImg.clientHeight;
-      myImg.style.width = width * 2;
-      myImg.style.height = height * 2;
-      console.log(myImg.style.width);
-      console.log(myImg.style.height);
+      myImg.setAttribute("style", "transform: scale(2);");
     };
   </script>
 </html>
